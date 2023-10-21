@@ -1,18 +1,18 @@
-#MERN Project for ITD110 - NoSQL Databases
+# MERN Project for ITD110 - NoSQL Databases
 
-##Run 'npm run dev' on both root and client folder to initialize the system
+## Run **npm run dev** on both root and client folder to initialize the system
 
-###Client Installs:
-- npm i
-- npm install -D tailwindcss postcss autoprefixer
-- npx tailwindcss init -p
-- npm i react-router-dom
-- npm i react-icons
+### Client Installs:
+1. npm i
+2. npm install -D tailwindcss postcss autoprefixer
+3. npx tailwindcss init -p
+4. npm i react-router-dom
+5. npm i react-icons
 
-###Root Folder Installs:
-- npm init -y
-- npm i express
-- npm i nodemon
-- npm i mongoose
-- npm i dotenv
-- npm i bcryptjs
+### Root Folder Installs:
+1. npm init -y
+2. npm i express
+3. npm i nodemon
+4. npm i mongoose
+5. npm i dotenv
+5. npm i bcryptjs
