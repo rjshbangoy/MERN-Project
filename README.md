@@ -5,9 +5,8 @@
 ### Client Installs:
 1. npm i
 2. npm install -D tailwindcss postcss autoprefixer
-3. npx tailwindcss init -p
-4. npm i react-router-dom
-5. npm i react-icons
+3. npm i react-router-dom
+4. npm i react-icons
 
 ### Root Folder Installs:
 1. npm init -y
