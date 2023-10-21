@@ -1,6 +1,6 @@
 # MERN Project for ITD110 - NoSQL Databases
 
-## Run > npm run dev < on both root and client folder to initialize the system
+## Run `npm run dev` on both root and client folder to initialize the system
 
 ### Client Installs:
 1. npm i
