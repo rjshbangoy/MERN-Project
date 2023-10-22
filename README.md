@@ -14,4 +14,5 @@
 3. npm i nodemon
 4. npm i mongoose
 5. npm i dotenv
-5. npm i bcryptjs
+6. npm i bcryptjs
+7. npm i jsonwebtoken 
