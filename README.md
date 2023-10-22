@@ -7,6 +7,7 @@
 2. npm install -D tailwindcss postcss autoprefixer
 3. npm i react-router-dom
 4. npm i react-icons
+5. npm install @reduxjs/toolkit react-redux
 
 ### Root Folder Installs:
 1. npm init -y
