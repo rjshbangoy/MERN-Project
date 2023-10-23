@@ -9,6 +9,7 @@
 4. npm i react-icons
 5. npm install @reduxjs/toolkit react-redux
 6. npm i redux-persist
+7. npm i firebase
 
 ### Root Folder Installs:
 1. npm init -y
