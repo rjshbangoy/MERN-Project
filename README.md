@@ -18,4 +18,5 @@
 4. npm i mongoose
 5. npm i dotenv
 6. npm i bcryptjs
-7. npm i jsonwebtoken 
+7. npm i jsonwebtoken
+8. npm i cookie-parser
