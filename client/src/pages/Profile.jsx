@@ -5,7 +5,6 @@ import { app } from '../firebase';
 import { updateUserStart, updateUserSuccess, updateUserFailure, deleteUserFailure, deleteUserStart, deleteUserSuccess, signOutUserStart, signOutUserFailure, signOutUserSuccess } from '../redux/user/userSlice';
 import { useDispatch } from 'react-redux';
 import { Link } from 'react-router-dom';
-import { current } from '@reduxjs/toolkit';
 
 export default function Profile() {
   const fileRef = useRef(null);
@@ -121,7 +120,7 @@ export default function Profile() {
   const handleShowListings = async () => {
     try {
       setShowListingsError(false);
-      const res = await fetch(`/api/listings/${currentUser._id}`);
+      const res = await fetch(`/api/user/listings/${currentUser._id}`);
       const data = await res.json();
       if (data.success === false) {
         setShowListingsError(true);
@@ -132,6 +131,23 @@ export default function Profile() {
 
     } catch (error) {
       setShowListingsError(true);
+    }
+  };
+
+  const handleListingDelete = async (listingId) => {
+    try {
+      const res = await fetch(`/api/listing/delete/${listingId}`, {
+        method: 'DELETE',
+      });
+      const data = await res.json();
+      if (data.success === false) {
+        console.log(data.message);
+        return;
+      }
+
+      setUserListings((prev) => prev.filter((listing) => listing._id !== listingId));
+    } catch (error) {
+      console.log(error.message);
     }
   };
 
@@ -186,7 +202,7 @@ export default function Profile() {
               </Link>
               <div className="flex flex-col items-center">
                 <button className="text-green-700 uppercase">Edit</button>
-                <button className="text-red-700 uppercase">Delete</button>
+                <button onClick={() => handleListingDelete(listing._id)} className="text-red-700 uppercase">Delete</button>
               </div>
             </div>
           ))}
