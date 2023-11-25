@@ -10,6 +10,7 @@
 5. npm install @reduxjs/toolkit react-redux
 6. npm i redux-persist
 7. npm i firebase
+8. npm i swiper
 
 ### Root Folder Installs:
 1. npm init -y
@@ -20,3 +21,4 @@
 6. npm i bcryptjs
 7. npm i jsonwebtoken
 8. npm i cookie-parser
+
