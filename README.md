@@ -11,6 +11,7 @@
 6. npm i redux-persist
 7. npm i firebase
 8. npm i swiper
+9. npm install -D @tailwindcss/line-clamp
 
 ### Root Folder Installs:
 1. npm init -y
@@ -21,4 +22,11 @@
 6. npm i bcryptjs
 7. npm i jsonwebtoken
 8. npm i cookie-parser
+
+### Add to tailwind.config.js file:
+// tailwind.config.js
+  plugins: [
+    require('@tailwindcss/line-clamp'),
+    // ...
+  ],
 
