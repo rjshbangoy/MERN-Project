@@ -10,7 +10,7 @@ export default function Search() {
     parking: false,
     furnished: false,
     offer: false,
-    sort: 'createdAt',
+    sort: 'created_at',
     order: 'desc'
   });
 
@@ -71,21 +71,21 @@ export default function Search() {
 
   const handleChange = (e) => {
     if (e.target.id === 'all' || e.target.id === 'rent' || e.target.id === 'sale') {
-      setSideBarData({...sideBarData, type: e.target.id});
+      setSideBarData({...sideBarData, type: e.target.id})
 ;    };
 
     if (e.target.id === 'searchTerm') {
-      setSideBarData({...sideBarData, searchTerm: e.target.value});
+      setSideBarData({...sideBarData, searchTerm: e.target.value})
     };
 
     if (e.target.id === 'parking' || e.target.id === 'furnished' || e.target.id === 'offer') {
-      setSideBarData({...sideBarData, [e.target.id]: e.target.checked || e.target.checked === 'true' ? true : false});
+      setSideBarData({...sideBarData, [e.target.id]: e.target.checked || e.target.checked === 'true' ? true : false})
     };
 
     if (e.target.id === 'sort_order') {
       const sort = e.target.value.split('_')[0] || 'created_at';
       const order = e.target.value.split('_')[1] || 'desc';
-      setSideBarData({...sideBarData, sort, order});
+      setSideBarData({...sideBarData, sort, order})
     };
   };
 
