@@ -30,3 +30,6 @@
     // ...
   ],
 
+
+### Project is inspired from youtube content creator React & Next js Projects with Sahand
+Sahand GitHub link: https://github.com/sahandghavidel/
